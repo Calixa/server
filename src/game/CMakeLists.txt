@@ -324,6 +324,7 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/BattleGround
   ${CMAKE_CURRENT_SOURCE_DIR}/OutdoorPvP
   ${CMAKE_SOURCE_DIR}/dep/include/g3dlite
+  ${CMAKE_SOURCE_DIR}/dep/lua/
   ${CMAKE_SOURCE_DIR}/dep/recastnavigation/Detour
   ${CMAKE_SOURCE_DIR}/dep/recastnavigation/
   ${CMAKE_SOURCE_DIR}/dep/include
@@ -384,8 +385,9 @@ add_library(${LIBRARY_NAME} STATIC
 )
 
 target_link_libraries(${LIBRARY_NAME}
-  shared
   detour
+  lua
+  shared
 )
 
 if(UNIX)
@@ -398,6 +400,8 @@ if(UNIX)
 endif()
 
 add_dependencies(${LIBRARY_NAME} revision.h)
+add_dependencies(${LIBRARY_NAME} lua)
+
 if(NOT ACE_USE_EXTERNAL)
   add_dependencies(${LIBRARY_NAME} ACE_Project)
 endif()

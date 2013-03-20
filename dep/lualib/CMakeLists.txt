@@ -1,5 +1,4 @@
-# Copyright (C) 2005-2011 MaNGOS <http://getmangos.com/>
-# Copyright (C) 2009-2011 MaNGOSZero <https://github.com/mangoszero>
+# Copyright (C) 2013 MaNGOSZero <https://github.com/mangoszero>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,14 +14,14 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-if(NOT (TBB_USE_EXTERNAL OR USE_STD_MALLOC))
-  add_subdirectory(tbb)
-endif()
+file(GLOB sources *.c)
 
-if(NOT ACE_USE_EXTERNAL)
-  add_subdirectory(ACE_wrappers)
-endif()
+set(lua_STAT_SRCS
+  ${sources}
+)
 
-add_subdirectory(recastnavigation)
-add_subdirectory(lualib)
-add_subdirectory(src)
+include_directories(
+  ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+add_library(lua STATIC ${lua_STAT_SRCS})
