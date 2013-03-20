@@ -16,7 +16,7 @@
 
 file(GLOB sources *.c)
 
-set(lua_STAT_SRCS
+set(lualib_STAT_SRCS
   ${sources}
 )
 
@@ -24,4 +24,4 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_library(lua STATIC ${lua_STAT_SRCS})
+add_library(lualib STATIC ${lualib_STAT_SRCS})
