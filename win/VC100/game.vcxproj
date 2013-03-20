@@ -173,6 +173,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
     <Midl>
@@ -207,6 +210,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -237,6 +243,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
     <Midl>
@@ -271,6 +280,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoPCH|Win32'">
     <ClCompile>
@@ -301,6 +313,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NoPCH|X64'">
     <Midl>
@@ -335,6 +350,9 @@
       <AdditionalDependencies>.\lualib__$(Platform)_$(Configuration)\lualib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
+    <PostBuildEvent>
+      <Command>copy ..\..\src\game\AuctionHouseBot\ahbot.conf.dist.in ..\..\bin\$(Platform)_$(Configuration)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\game\AccountMgr.cpp" />
