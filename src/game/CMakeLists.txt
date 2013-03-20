@@ -147,6 +147,8 @@ set(LIBRARY_SRCS
     LootHandler.cpp
     LootMgr.cpp
     LootMgr.h
+    LuaEngine/LuaEngine.cpp
+    LuaEngine/LuaEngine.h
     Mail.cpp
     Mail.h
     MailHandler.cpp

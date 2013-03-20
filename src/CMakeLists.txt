@@ -31,4 +31,3 @@ add_subdirectory(realmd)
 add_subdirectory(game)
 add_subdirectory(mangosd)
 add_subdirectory(bindings)
-
