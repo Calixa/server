@@ -1,5 +1,5 @@
 # Copyright (C) 2005-2011 MaNGOS <http://getmangos.com/>
-# Copyright (C) 2009-2011 MaNGOSZero <https://github.com/mangos/zero>
+# Copyright (C) 2009-2013 MaNGOSZero <https://github.com/mangoszero>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -147,8 +147,22 @@ set(LIBRARY_SRCS
     LootHandler.cpp
     LootMgr.cpp
     LootMgr.h
+    LuaEngine/AuraMethods.h
+    LuaEngine/GameObjectMethods.h
+    LuaEngine/GlobalMethods.h
+    LuaEngine/GroupMethods.h
+    LuaEngine/GuildMethods.h
+    LuaEngine/HookMgr.cpp
+    LuaEngine/HookMgr.h
+    LuaEngine/ItemMethods.h
     LuaEngine/LuaEngine.cpp
     LuaEngine/LuaEngine.h
+    LuaEngine/LuaFunctions.h
+    LuaEngine/LuaHooks.cpp
+    LuaEngine/QueryMethods.h
+    LuaEngine/QuestMethods.h
+    LuaEngine/SpellMethods.h
+    LuaEngine/UnitMethods.h
     Mail.cpp
     Mail.h
     MailHandler.cpp
