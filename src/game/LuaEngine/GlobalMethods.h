@@ -23,7 +23,7 @@
 #include "MapManager.h"
 #include "SharedDefines.h"
 
-#ifndef GLOBALMETHODS
-#define GLOBALMETHODS
+#ifndef __GLOBAL_METHODS_LUAENGINE
+#define __GLOBAL_METHODS_LUAENGINE
 
 #endif

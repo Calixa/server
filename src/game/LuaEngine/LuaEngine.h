@@ -16,7 +16,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
- 
+
+#ifndef __LUAENGINE__H
+#define __LUAENGINE__H
+
 #include <lua.hpp>
 
 #include "AccountMgr.h"
@@ -31,3 +34,5 @@
 #include "SystemConfig.h"
 #include "MapManager.h"
 #include "Language.h"
+
+#endif
