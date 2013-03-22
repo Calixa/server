@@ -17,4 +17,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
  
- #include <lua.hpp>
+#include <lua.hpp>
+
+#include "AccountMgr.h"
+#include "Chat.h"
+#include "Channel.h"
+#include "Creature.h"
+#include "Group.h"
+#include "Guild.h"
+#include "GuildMgr.h"
+#include "QuestDef.h"
+#include "ScriptMgr.h"
+#include "SystemConfig.h"
+#include "MapManager.h"
+#include "Language.h"

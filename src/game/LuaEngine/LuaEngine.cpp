@@ -18,3 +18,15 @@
  */
 
 #include "LuaEngine.h"
+#include "AuraMethods.h"
+#include "GameObjectMethods.h"
+#include "GlobalMethods.h"
+#include "GroupMethods.h"
+#include "GuildMethods.h"
+#include "HookMgr.h"
+#include "ItemMethods.h"
+#include "LuaFunctions.h"
+#include "QueryMethods.h"
+#include "QuestMethods.h"
+#include "SpellMethods.h"
+#include "UnitMethods.h"
