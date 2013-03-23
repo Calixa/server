@@ -147,22 +147,6 @@ set(LIBRARY_SRCS
     LootHandler.cpp
     LootMgr.cpp
     LootMgr.h
-    LuaEngine/AuraMethods.h
-    LuaEngine/GameObjectMethods.h
-    LuaEngine/GlobalMethods.h
-    LuaEngine/GroupMethods.h
-    LuaEngine/GuildMethods.h
-    LuaEngine/HookMgr.cpp
-    LuaEngine/HookMgr.h
-    LuaEngine/ItemMethods.h
-    LuaEngine/LuaEngine.cpp
-    LuaEngine/LuaEngine.h
-    LuaEngine/LuaFunctions.h
-    LuaEngine/LuaHooks.cpp
-    LuaEngine/QueryMethods.h
-    LuaEngine/QuestMethods.h
-    LuaEngine/SpellMethods.h
-    LuaEngine/UnitMethods.h
     Mail.cpp
     Mail.h
     MailHandler.cpp
@@ -338,10 +322,8 @@ include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}/vmap
   ${CMAKE_CURRENT_SOURCE_DIR}/AuctionHouseBot
   ${CMAKE_CURRENT_SOURCE_DIR}/BattleGround
-  ${CMAKE_CURRENT_SOURCE_DIR}/LuaEngine
   ${CMAKE_CURRENT_SOURCE_DIR}/OutdoorPvP
   ${CMAKE_SOURCE_DIR}/dep/include/g3dlite
-  ${CMAKE_SOURCE_DIR}/dep/lualib/
   ${CMAKE_SOURCE_DIR}/dep/recastnavigation/Detour
   ${CMAKE_SOURCE_DIR}/dep/recastnavigation/
   ${CMAKE_SOURCE_DIR}/dep/include
@@ -402,9 +384,8 @@ add_library(${LIBRARY_NAME} STATIC
 )
 
 target_link_libraries(${LIBRARY_NAME}
-  detour
-  lualib
   shared
+  detour
 )
 
 if(UNIX)
@@ -417,7 +398,6 @@ if(UNIX)
 endif()
 
 add_dependencies(${LIBRARY_NAME} revision.h)
-add_dependencies(${LIBRARY_NAME} lualib)
 
 if(NOT ACE_USE_EXTERNAL)
   add_dependencies(${LIBRARY_NAME} ACE_Project)
